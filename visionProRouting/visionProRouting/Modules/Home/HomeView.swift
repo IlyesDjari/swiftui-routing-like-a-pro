@@ -12,15 +12,11 @@ struct HomeView: View {
     var body: some View {
         VStack {
             Button {
-                router.push(Path.profile)
+                router.push(Path.profile(person: person))
             } label: {
                 HomeProfileComponent(person: person)
             }
             .hoverEffect(.lift)
-            Spacer()
-            NeumorphicButton(label: "Create profile") {
-                router.push(Path.createProfile)
-            }
         }
         .padding(100)
     }

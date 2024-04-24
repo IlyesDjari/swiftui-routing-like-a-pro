@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Person {
+public struct Person: Hashable {
     var profilePictureURL: URL?
     var firstName: String
     var lastName: String

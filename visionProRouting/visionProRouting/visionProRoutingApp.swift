@@ -26,10 +26,8 @@ struct visionProRoutingApp: App {
             switch path {
             case .home:
                 HomeView()
-            case .profile:
-                ProfileView()
-            case .createProfile:
-                CreateProfileView()
+            case .profile(let person):
+                ProfileView(person: person)
             }
         }
     }

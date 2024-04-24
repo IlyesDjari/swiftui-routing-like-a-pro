@@ -11,7 +11,7 @@ struct NeumorphicButton: View {
             Text(label)
                 .font(.system(size: 80))
                 .fontWeight(.bold)
-                .foregroundColor(.gray.opacity(0.9))
+                .foregroundStyle(.gray.opacity(0.9))
                 .padding(.horizontal, 50)
                 .padding(.vertical, 30)
         }

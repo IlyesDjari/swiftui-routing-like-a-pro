@@ -12,10 +12,10 @@ struct HomeProfileComponent: View {
                 Text("\(person.firstName) \(person.lastName)")
                     .font(.system(size: 120))
                     .fontWeight(.medium)
-                    .foregroundColor(.gray)
+                    .foregroundStyle(.gray)
                 Text(person.jobTitle)
                     .font(.system(size: 80))
-                    .foregroundColor(.gray)
+                    .foregroundStyle(.gray)
             }
             Spacer()
         }
