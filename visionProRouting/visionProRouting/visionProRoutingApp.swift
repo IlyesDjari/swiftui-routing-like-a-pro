@@ -11,10 +11,26 @@ import SwiftUI
 struct visionProRoutingApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeCoordinatorView()
-                .frame(depth: 0)
+            NavigationRouterView {  _ in
+                makeView(for: .home)
+                    .navigationDestination(for: Path.self, destination: makeView)
+            }
         }
         .windowStyle(.volumetric)
         .defaultSize(width: 4, height: 2, depth: 1, in: .meters)
+    }
+    
+    @ViewBuilder
+    private func makeView(for path: Path) -> some View {
+        Group {
+            switch path {
+            case .home:
+                HomeView()
+            case .profile:
+                ProfileView()
+            case .createProfile:
+                CreateProfileView()
+            }
+        }
     }
 }

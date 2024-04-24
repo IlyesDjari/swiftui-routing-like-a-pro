@@ -15,9 +15,8 @@
 		7E42AF402BD9184D004B32F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF322BD9184C004B32F6 /* HomeView.swift */; };
 		7E42AF412BD9184D004B32F6 /* HomeProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF342BD9184C004B32F6 /* HomeProfileComponent.swift */; };
 		7E42AF422BD9184D004B32F6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF362BD9184C004B32F6 /* ProfileView.swift */; };
-		7E42AF432BD9184D004B32F6 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF392BD9184C004B32F6 /* HomeCoordinatorView.swift */; };
 		7E42AF442BD9184D004B32F6 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF3A2BD9184C004B32F6 /* NavigationRouter.swift */; };
-		7E42AF452BD9184D004B32F6 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF3B2BD9184C004B32F6 /* Destination.swift */; };
+		7E42AF452BD9184D004B32F6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF3B2BD9184C004B32F6 /* Path.swift */; };
 		7E42AF462BD9184D004B32F6 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF3D2BD9184C004B32F6 /* CreateProfileView.swift */; };
 		7E42AF472BD9184D004B32F6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF3F2BD9184D004B32F6 /* Person.swift */; };
 		7E42AF492BD9185B004B32F6 /* Color+offWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42AF482BD9185B004B32F6 /* Color+offWhite.swift */; };
@@ -37,12 +36,11 @@
 		7E42AF322BD9184C004B32F6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7E42AF342BD9184C004B32F6 /* HomeProfileComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProfileComponent.swift; sourceTree = "<group>"; };
 		7E42AF362BD9184C004B32F6 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		7E42AF392BD9184C004B32F6 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
 		7E42AF3A2BD9184C004B32F6 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
-		7E42AF3B2BD9184C004B32F6 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		7E42AF3B2BD9184C004B32F6 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		7E42AF3D2BD9184C004B32F6 /* CreateProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		7E42AF3F2BD9184D004B32F6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		7E42AF482BD9185B004B32F6 /* Color+offWhite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+offWhite.swift"; path = "../../routinglikeapro/routinglikeapro/Supporting Files/Color+offWhite.swift"; sourceTree = "<group>"; };
+		7E42AF482BD9185B004B32F6 /* Color+offWhite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+offWhite.swift"; sourceTree = "<group>"; };
 		7E42AF4B2BD91865004B32F6 /* PlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		7E42AF4C2BD91865004B32F6 /* NeumorphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		7E42AF4F2BD921E8004B32F6 /* NeumorphicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButton.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				7E42AF1D2BD91816004B32F6 /* visionProRoutingApp.swift */,
 				7E42AF232BD91816004B32F6 /* ImageBasedLighting.skybox */,
 				7E42AF252BD91817004B32F6 /* Assets.xcassets */,
-				7E42AF482BD9185B004B32F6 /* Color+offWhite.swift */,
 				7E42AF2A2BD91817004B32F6 /* Info.plist */,
 				7E42AF272BD91817004B32F6 /* Preview Content */,
 			);
@@ -149,19 +146,10 @@
 		7E42AF372BD9184C004B32F6 /* NavigationRouter */ = {
 			isa = PBXGroup;
 			children = (
-				7E42AF382BD9184C004B32F6 /* Home */,
 				7E42AF3A2BD9184C004B32F6 /* NavigationRouter.swift */,
-				7E42AF3B2BD9184C004B32F6 /* Destination.swift */,
+				7E42AF3B2BD9184C004B32F6 /* Path.swift */,
 			);
 			path = NavigationRouter;
-			sourceTree = "<group>";
-		};
-		7E42AF382BD9184C004B32F6 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				7E42AF392BD9184C004B32F6 /* HomeCoordinatorView.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		7E42AF3C2BD9184C004B32F6 /* CreateProfile */ = {
@@ -184,6 +172,7 @@
 		7E42AF4A2BD91865004B32F6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7E42AF482BD9185B004B32F6 /* Color+offWhite.swift */,
 				7E42AF4B2BD91865004B32F6 /* PlaceholderView.swift */,
 				7E42AF4C2BD91865004B32F6 /* NeumorphicView.swift */,
 				7E42AF4F2BD921E8004B32F6 /* NeumorphicButton.swift */,
@@ -275,8 +264,7 @@
 				7E42AF472BD9184D004B32F6 /* Person.swift in Sources */,
 				7E42AF462BD9184D004B32F6 /* CreateProfileView.swift in Sources */,
 				7E42AF4E2BD91865004B32F6 /* NeumorphicView.swift in Sources */,
-				7E42AF432BD9184D004B32F6 /* HomeCoordinatorView.swift in Sources */,
-				7E42AF452BD9184D004B32F6 /* Destination.swift in Sources */,
+				7E42AF452BD9184D004B32F6 /* Path.swift in Sources */,
 				7E42AF412BD9184D004B32F6 /* HomeProfileComponent.swift in Sources */,
 				7E42AF422BD9184D004B32F6 /* ProfileView.swift in Sources */,
 			);
